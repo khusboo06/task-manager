@@ -77,28 +77,7 @@ TaskFlow is a modern full-stack task management application that helps users org
 
 ---
 
-## 📂 Project Structure
 
-```
-task-manager/
-│
-├── backend/
-│   ├── controllers/
-│   ├── services/
-│   ├── routes/
-│   ├── middleware/
-│   ├── config/
-│   ├── prisma/
-│   └── server.ts
-│
-├── frontend/
-│   ├── app/
-│   ├── components/
-│   ├── services/
-│   └── public/
-```
-
----
 
 ## ⚙️ Setup Instructions
 
@@ -111,12 +90,7 @@ cd task-manager
 
 ---
 
-### 2️⃣ Backend Setup
 
-```bash
-cd backend
-npm install
-```
 
 Create `.env` file:
 
@@ -132,7 +106,7 @@ Run database migration:
 npx prisma migrate dev --name init
 ```
 
-Start backend server:
+Start server:
 
 ```bash
 npm run dev
@@ -140,13 +114,7 @@ npm run dev
 
 ---
 
-### 3️⃣ Frontend Setup
 
-```bash
-cd frontend
-npm install
-npm run dev
-```
 
 ---
 
@@ -184,17 +152,4 @@ npm run dev
 * Dark/Light mode toggle
 * Calendar view for deadlines
 * Notifications & reminders
-* Deployment (Vercel + Render + Cloud DB)
 
----
-
-## 👩‍💻 Author
-
-**Khushboo Kumari**
-B.Tech CSE | Full Stack Developer
-
----
-
-## 📄 License
-
-This project is built for educational and assessment purposes.
