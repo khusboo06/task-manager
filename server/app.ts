@@ -19,4 +19,11 @@ app.use(express.json());
 app.use("/auth", authRoutes);
 app.use("/tasks", taskRoutes);
 
+// Last-resort error handler for async route failures.
+app.use((err: any, _req: any, res: any, _next: any) => {
+  // eslint-disable-next-line no-console
+  console.error("[express] error:", err);
+  res.status(500).json({ message: "Internal Server Error" });
+});
+
 export default app;
