@@ -1,10 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  experimental: {
-    // Allow Next to import code from sibling folders (e.g. `../backend`).
-    externalDir: true,
-  },
   async rewrites() {
     // Keep the existing client API paths (`/auth/*` and `/tasks/*`)
     // while routing them to Next API handlers.
